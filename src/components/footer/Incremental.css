@@ -1,0 +1,18 @@
+.incremental_icon-column {
+  position: relative;
+  text-align: center;
+  flex: 1; /* Para que todas as colunas tenham o mesmo tamanho */
+  min-width: 150px; /* Tamanho mínimo para cada coluna */
+  margin: 10px; /* Adiciona espaçamento entre as colunas */
+}
+
+.incremental_icon-column .material-icons {
+  font-size: 48px; /* Tamanho do ícone */
+  display: block; /* Para centralizar o texto abaixo do ícone */
+}
+.incremental_icon-columns {
+  display: flex;
+  justify-content: center; /* Alinha as colunas no centro */
+  align-items: center; /* Alinha verticalmente no centro */
+  flex-wrap: wrap; /* Permite que as colunas se ajustem em telas menores */
+}

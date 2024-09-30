@@ -1,0 +1,41 @@
+/* Estilo do input de busca */
+.header_search-input input {
+  width: 400px; /* Ajuste o tamanho conforme desejado */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Arredonda o lado esquerdo */
+  font-size: 16px;
+  outline: none;
+  height: 40px; /* Altura consistente */
+  box-sizing: border-box; /* Para garantir que o padding seja incluso na altura */
+}
+
+/* Estilo do botão de pesquisa */
+.header_search-button button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 40px; /* Mesmo que o input */
+  width: 40px; /* Tamanho fixo */
+  border-radius: 0 4px 4px 0; /* Arredonda o lado direito */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.header_search-button button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Ajuste para o ícone dentro do botão */
+.header_search-button .material-icons {
+  font-size: 24px;
+}
+
+/* Estilo do container da pesquisa e botão */
+.header_search-container {
+  display: flex;
+  align-items: center; /* Garante que o input e o botão fiquem alinhados verticalmente */
+}

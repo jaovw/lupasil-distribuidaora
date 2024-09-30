@@ -1,0 +1,7 @@
+.header_buttons button {
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
