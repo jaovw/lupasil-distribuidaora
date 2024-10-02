@@ -1,16 +1,16 @@
 import { Component } from 'react';
 import './App.css';
-import Header from './components/header/Header';
-import Incremental from './components/footer/Incremental';
+// import Incremental from './components/footer/Incremental';
 import Footer from './components/footer/Footer';
+import Navbar from './components/navbar/Navbar';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
+        <Navbar/>
         {/* <Fornecedores/> */}
-        <Incremental/>
+        {/* <Incremental/> */}
         <Footer/>
       </div>
     );

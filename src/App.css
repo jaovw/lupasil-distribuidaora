@@ -1,19 +1,11 @@
-body {
-  height: 100%; /* Faz o body ocupar toda a altura da tela */
-  width: 100%; /* Ajuste a largura conforme necessário */
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh; /* Garante que a página ocupe toda a altura da tela */
-}
-
-.content {
-  flex: 1; /* O conteúdo principal ocupa o espaço restante */
+a {
+  text-decoration: none;
 }

@@ -1,6 +1,6 @@
 /* Estilo do input de busca */
 .header_search-input input {
-  width: 400px; /* Ajuste o tamanho conforme desejado */
+  width: 300px; /* Ajuste o tamanho conforme desejado */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px; /* Arredonda o lado esquerdo */
