@@ -1,0 +1,28 @@
+/* Contêiner principal que envolve tudo */
+.brands_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.brands_container p {
+  text-align: center;
+  margin: 0 20%;
+  font-size: 30px;
+}
+
+.brands_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Espaçamento entre as imagens */
+  width: 100%;
+  max-width: 80%;
+}
+
+.brand {
+  width: 100px;
+  height: 70px;
+}
