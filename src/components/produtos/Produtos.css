@@ -1,0 +1,73 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  max-width: 100%;
+  height: auto;
+  background-color: #f4f4f4;
+}
+
+.product-item {
+  width: 18%;
+  /* min-height: 90px; */
+  height: auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(104, 49, 49, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.product-name {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.product-description {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #333;
+  word-wrap: break-word;
+}
+
+.product-price {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Estilos para telas menores (mobile) */
+@media screen and (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-item {
+    width: 100%; /* Faz o item ocupar toda a largura no mobile */
+    max-width: 400px; /* Se desejar limitar a largura no mobile */
+    margin-bottom: 20px;
+  }
+}

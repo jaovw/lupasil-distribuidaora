@@ -3,6 +3,7 @@ import Fornecedores from "./components/footer/Fornecedores";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Carousel from "./components/swiper/Carousel";
+import Produtos from "./components/produtos/Produtos";
 import { epis } from "./components/swiper/Data";
 import "./App.css";
 
@@ -12,6 +13,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Carousel images={epis} />
+        <Produtos />
         <Fornecedores />
         <Footer />
       </div>
