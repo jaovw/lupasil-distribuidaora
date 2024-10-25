@@ -1,0 +1,66 @@
+.not-found-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh; /* Ocupa toda a altura da página */
+  background-color: #f8f9fa; /* Cor de fundo clara */
+  padding: 20px; /* Espaço ao redor */
+  flex-direction: row; /* Lado a lado em telas grandes */
+}
+
+.not-found-image {
+  width: 300px; /* Tamanho da imagem */
+  margin-right: 40px; /* Espaçamento entre a imagem e o conteúdo à direita */
+}
+
+.not-found-content {
+  display: flex;
+  flex-direction: column; /* Dispor os textos e botão verticalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.not-found-button {
+  padding: 10px 20px;
+  background-color: #0073b1; /* Cor do botão */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: fit-content; /* O botão se ajusta ao tamanho do texto */
+}
+
+.not-found-button:hover {
+  background-color: #005682; /* Mudança de cor no hover */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  /* Quando a tela for menor que 768px (tablets e celulares) */
+  .not-found-container {
+    flex-direction: column; /* Colocar a imagem e o texto um embaixo do outro */
+    text-align: center; /* Centralizar o texto em telas pequenas */
+  }
+
+  .not-found-image {
+    margin-right: 0; /* Remover o espaçamento à direita */
+    margin-bottom: 20px; /* Adicionar espaçamento abaixo da imagem */
+  }
+
+  .not-found-content {
+    align-items: center; /* Centralizar o conteúdo em telas pequenas */
+  }
+}
