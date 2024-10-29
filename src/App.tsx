@@ -8,6 +8,7 @@ import Produtos from "./components/produtos/Produtos";
 import { epis } from "./components/swiper/Data";
 import "./App.css";
 import NotFound from "./components/NotFound/NotFound";
+import WhatsApp from "./components/whatsapp/Whatsapp";
 
 class App extends Component {
   render() {
@@ -38,6 +39,7 @@ class App extends Component {
           <Route path="*" element={<NotFound />} />
         </Routes>
 
+        <WhatsApp number="5541996106490" />
         <Footer />
       </div>
     );
