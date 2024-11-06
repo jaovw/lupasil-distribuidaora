@@ -38,7 +38,7 @@ const Produtos: React.FC = () => {
               className="product-image"
             />
             <div className="product-name">{product.nome}</div>
-            <div className="product-description">{product.descricao}</div>
+            <div className="product-description">CA {product.CA}</div>
             {product.promocao && (
               <div className="product-price">R$ {product.preco}</div>
             )}

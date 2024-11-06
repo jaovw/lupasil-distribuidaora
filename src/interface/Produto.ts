@@ -5,4 +5,5 @@ export interface Produto {
   preco: string;
   url: string;
   promocao: boolean;
+  CA: number;
 }

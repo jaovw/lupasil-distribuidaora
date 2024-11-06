@@ -8,7 +8,7 @@ import Produtos from "./components/produtos/Produtos";
 import { epis } from "./components/swiper/Data";
 import "./App.css";
 import NotFound from "./components/NotFound/NotFound";
-import WhatsApp from "./components/whatsapp/Whatsapp";
+import WhatsApp from "./components/whatsapp/WhatsApp";
 
 class App extends Component {
   render() {
