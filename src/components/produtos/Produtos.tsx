@@ -3,19 +3,29 @@ import "./Produtos.css";
 import api from "../../config/Axios";
 import { Produto } from "../../interface/Produto";
 import Pagination from "../pagination/Pagination";
+import { useLocation } from "react-router-dom";
 
 const Produtos: React.FC = () => {
   const [produtos, setProdutos] = useState<Produto[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 15; // Define quantos produtos serão exibidos por página
+  const location = useLocation(); // Usado para acessar os query params da URL
 
-  const getProdutos = async () => {
-    await api.get("/produtos").then((response) => setProdutos(response.data));
+  const getProdutos = async (filtro: string) => {
+    try {
+      const response = await api.post("/produtos/filtro", { filtro });
+      setProdutos(response.data);
+    } catch (error) {
+      console.error("Erro ao buscar produtos:", error);
+    }
   };
 
   useEffect(() => {
-    getProdutos();
-  }, []);
+    const queryParams = new URLSearchParams(location.search);
+    const filtro = queryParams.get("filtro") || "";
+
+    getProdutos(filtro); 
+  }, [location]); // Reexecuta sempre que a URL mudar
 
   // Calcula os produtos da página atual
   const indexOfLastItem = currentPage * itemsPerPage;

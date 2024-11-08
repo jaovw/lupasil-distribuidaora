@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import logo from "../../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
-// import Search from "../header/Search";
+import Search from "../header/Search";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Navbar = () => {
         style={{ cursor: "pointer" }}
       />
 
-      {/* <Search /> */}
+      <Search />
       <nav className="navbar">
         <a href="/produtos">Produtos</a>
         <a href="/">Botas</a>
